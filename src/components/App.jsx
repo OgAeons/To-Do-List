@@ -18,7 +18,11 @@ function App() {
             <Input addItem={addItem} />
             <div>
                 <ul>
-                    <li>item</li>
+                    {items.map(item => (
+                        <ToDo
+                            text={item}
+                        />
+                    ))}
                 </ul>
             </div>
         </div>
