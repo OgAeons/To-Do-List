@@ -5,10 +5,11 @@ import Input from "./Input"
 function App() {
     const [items, setItems] = useState([])
 
-    function addItem(input) {
+    function addItem(input, setInput) {
         setItems(prevItems => {
             return [...prevItems, input]
         })
+        setInput("")
     }
 
     function deleteItem(id) {

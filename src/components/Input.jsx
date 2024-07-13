@@ -12,7 +12,7 @@ function Input(props) {
         <div className="form">
             <input onChange={handleChange} type="text" />
             <button onClick={() => {
-                props.addItem(input)
+                props.addItem(input, setInput)
             }}>
                 <span>Add</span>
             </button>
