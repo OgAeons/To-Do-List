@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 
-function Input() {
+function Input(props) {
     const [input, setInput] = useState("")
 
     function handleChange(event) {
